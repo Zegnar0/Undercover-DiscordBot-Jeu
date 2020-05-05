@@ -1,0 +1,43 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Régle:
+chaqun a un mot,tous ont le meme ,sauf un qui en a un proche et qui doit se faire passer pour un mec normal.
+Objectif:
+Trouver l'undercover
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Forme:
+1-tu a un dm en message
+2-Tua deux channels:
+-Message
+-Vote
+Dans Message tu peux envoyer des message comme tu veux,
+( et quand partie fini Delete tous les message du chat).
+Dans Vote, on a un message avec 4 joueurs chaqu'un avec un chiffre en intéraction pour le vote
+avec le nombre de vote pour une personne en temps réel,
+(rajouter un bouton Check si on veut changer de vote),
+Quand tout le monde a voté montrer l'undercover.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+idée ajouts:
+-Rajouter un systéme de manche, score
+-rajouter commande pour forcer
+-Faire une partie avec choix personnalisées
+-si t'es pas dans la game tu peux pas voté
+-si déja dans la game jpp rejoindre
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+en détail:
+lance la commande dans le tchat'uc-start' FAIT
+créer un interface pour noter les joueurs qui rejoignent, auntant que l'on veut pour le moment avec commande 'uc-add' FAIT
+commande 'uc-launch' pour lancer la game avec les gens FAIT
+envoie un dm a tous  FAIT avec le premier mot et 1 avec un mot différent au hasard.FAIT
+les gens parle dans le channel undercover FAIT
+les gens vont dans undercover et choisissent qui est l'undercover avec 'uc-vote @nom'FAIT
+RésultaltFAIT
+arréte la partieFAIT
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>rajouter des réactions pour l'ajouter a la game<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                                                                                                                               (vote?)
+
+
+
+
+
