@@ -4,7 +4,7 @@
  # Installation:
  Pour l'ajouter a votre serveur, téléchargez le repo puis installez node.js, vs-code et discord.js.
  Ensuite lancez UndV1.js avec vs-code.
- Créez un bot discord sur https://discord.com/developers et récupérez son token (onglet bot:reveal Token) que vous mettrez a la fin du programme a la place de "TOKEN", exemple: "4qkdkq9dz.doqzodqvuy4576pe".
+ Créez un bot discord sur https://discord.com/developers et récupérez son token (onglet bot:reveal Token) que vous mettrez a la fin du programme a la place de "TOKEN", exemple: "4qkdkq9dz.doqzodqvuy4576pe". et dans oauth2 selectionez le scopes Bot et selectionnez ensuite administrators en bot permissions. Récupérez ensuite le lien et mettez le dans la barre de recherche puis ajoutez le.
  
   # Commande:
   uc-rule pour les régles
@@ -16,6 +16,6 @@
   ouvrez UndV1.js et rajoutez 
   # ,"votre mot" avec la virgule
   dans Fword et Rword .
-  VOUS DEVEZ EN RAJOUTEZ UN DANS CHAQUE ARRAY sinon crash. Pour vérifier qu'il y a le meme chiffre de mot dans chaque liste regardez la console, les premiers chiffres sont le nombre de mots dans chaque.
+  VOUS DEVEZ EN RAJOUTEZ UN DANS CHAQUE ARRAY sinon crash. Pour vérifier qu'il y a le meme chiffre de mot dans chaque liste regardez la console, les premiers chiffres sont le nombre de mots dans chaque array.
 
   # le projet est fonctionnel mais il y a surement encore des bugs
