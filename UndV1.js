@@ -182,4 +182,4 @@ client.on('message',message=>{
 })
 
 
-client.login('NzA2NDgwNTk0ODgzODM4MDEy.Xq7CxA.2noBI_996B3dpr08vB7xZNg3KxM');
+client.login('TOKEN');
