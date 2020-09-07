@@ -1,1 +1,1 @@
-worker: node UndV1.js
+web: node UndV1.js
