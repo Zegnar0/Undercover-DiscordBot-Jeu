@@ -1,0 +1,22 @@
+{
+  "name": "undercover",
+  "version": "1.0.0",
+  "description": "A playing Bot for undercover",
+  "main": "UndV1.js",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "uc-rule"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zegnar0/Undercover-DiscordBot-Jeu/blob/master/UndV1.js"
+  },
+  "keywords": [
+    "YES"
+  ],
+  "author": "Zegnar",
+  "license": "ISC"
+}
