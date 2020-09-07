@@ -31,7 +31,7 @@ client.on('ready', () =>{
 })
 
 client.on('message', message => {
-	switch (message.content.toUpperCase()) {
+	switch (message.content.toLowerCase()) {
 		case 'uc-reset':
 			resetBot(message.channel);
 			break;
