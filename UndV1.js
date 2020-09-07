@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 launch = false;
+const TOKEN = process.env.TOKEN;
 var Player=[];
 vote = 0;
 teamMember=0;
@@ -200,4 +201,4 @@ client.on("message", async message => {
 
 
 
-client.login('TOKEN');
+client.login(TOKEN);
