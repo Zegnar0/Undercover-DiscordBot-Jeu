@@ -24,7 +24,7 @@ client.on('message', message => {
 });
 
 client.on('ready', () =>{
-	client.user.setPresence({ activity: { name: 'Powered by un dev éclaté, help: uc-rule' }, status: 'online' })
+	client.user.setPresence({ activity: { name: 'uc-rule' }, status: 'online' })
   		.then(console.log)
 		 .catch(console.error);
 	
