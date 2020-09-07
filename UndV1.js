@@ -44,7 +44,7 @@ function resetBot(channel) {
 		.then(msg => client.destroy())
 		.then(() => client.login(TOKEN));
 	launch = false;
-	var Player = [];
+	Player = [];
 	vote = 0;
 	teamMember = 0;
 	Choisbit = 0;
