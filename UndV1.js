@@ -16,11 +16,6 @@ choisi=0;
 console.log(Rword.length);
 console.log(Fword.length);
 
-
-client.on('ready', () => {
-  console.log('I am ready!');
-});
-
 client.on('message', message => {
   if (message.content === 'uc-avatar') {
     message.reply(message.author.displayAvatarURL());
@@ -30,7 +25,8 @@ client.on('message', message => {
 client.on('ready', () =>{
 	client.user.setPresence({ activity: { name: 'Powered by un dev éclaté' }, status: 'online' })
   		.then(console.log)
- 		.catch(console.error);
+		 .catch(console.error);
+	
 })
 
 client.on('message', message=>{
@@ -39,7 +35,7 @@ client.on('message', message=>{
 		const embed = new Discord.MessageEmbed()
 		.setTitle('Starting...')
 		.setThumbnail('https://cdn.discordapp.com/attachments/706571623741784095/706571882702307468/loupe_318-1787.jpg')
-		.setDescription("Explication de l'undercover")
+		.setDescription("Explication de l'undercover(min 3 joueurs/ min 3 tours pour les mots)")
 		.addField("Régle:","Tous le monde à le même mot sauf un qui est l'undercover.\n Il à un mot différent des autres mais proche.\nL'objectif est de le retrouver en envoyant des messages un par un dans le chat.\nQuand vous savez qui est l'undercover, VOTEZ!!\n(on écrit de bas en haut pour les mots)")
 		.addField("Commande:","Faites uc-join pour rejoindre la partie. Ex: uc-join \nFaites 'uc-launch' pour démarrer la game(assurez-vous que tout le monde a rejoint)\nFaites uc-vote @pseudo pour voter.Ex:uc-vote @Lol\n + de 100 groupes de mots différents.");
 		message.channel.send(embed);
@@ -49,6 +45,12 @@ client.on('message', message=>{
 client.on('message',message=>{
 	msg=message.content.toLowerCase();
 	mention= message.mentions.users.first();
+	
+	if (message.content === 'uc-fete') {
+		message.delete();
+		message.channel.send("Joyeuse fête des mères");
+	}
+	
 
 	if (message.content === 'uc-join'){
 		if(launch===true){
@@ -68,6 +70,11 @@ client.on('message',message=>{
 		mention.send(mentionMessage);
 	}
 
+	if (msg.startsWith('!chut')) {
+		message.delete();
+		message.channel.send("Chut!!!!!");
+	}
+	
 	
 	if (msg.startsWith('uc-ment')) {
 		console.log(msg);
@@ -180,6 +187,17 @@ client.on('message',message=>{
 	}
 
 })
+
+client.on("message", async message => {
+	if (message.author.bot) return;
+	if (message.content.startsWith("uc-ping")){
+		const m = await message.channel.send("uc-ping");
+		m.edit(`La latence est de ${m.createdTimestamp - message.createdTimestamp}ms.`);
+	}
+	
+
+})
+
 
 
 client.login('TOKEN');
