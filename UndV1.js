@@ -30,6 +30,33 @@ client.on('ready', () =>{
 	
 })
 
+client.on('message', message => {
+	switch (message.content.toUpperCase()) {
+		case 'uc-reset':
+			resetBot(message.channel);
+			break;
+
+	}
+});
+
+function resetBot(channel) {
+	channel.send('Reset...')
+		.then(msg => client.destroy())
+		.then(() => client.login(TOKEN));
+	launch = false;
+	var Player = [];
+	vote = 0;
+	teamMember = 0;
+	Choisbit = 0;
+	a = true;
+	undercover = " ";
+	valeur = "";
+	Uvaleur = "";
+	merde = 0;
+	choisi = 0;
+
+		}
+
 client.on('message', message=>{
 	if(message.content === 'uc-rule'){
 		message.channel.send('commande fonctionnel');
